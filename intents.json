@@ -1,0 +1,58 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "no_answer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through Portal and list of features/options we do have", "Attendance tracking", "Leaves Apply", "Holiday Calender", "Leaves Application status", "Upcoming Events"],
+         "context": [""]
+        },
+        {"tag": "attendance",
+         "patterns": ["What is my attendance today?", "Have I marked attendance today?", "Check my attendance"],
+         "responses": ["Let me check your attendance... Yes, you have marked attendance today!", "You marked attendance today!", "Attendance checked. You are present today."],
+         "context_set": "attendance_checked"
+        },
+        {"tag": "apply_leave",
+         "patterns": ["I want to apply for a leave", "Apply for leave", "Request for leave"],
+         "responses": ["Sure! For which dates would you like to apply for leave?", "When would you like to take the leave?"],
+         "context_set": "leave_application_initiated"
+        },
+        {"tag": "leave_status",
+         "patterns": ["Leave status","What is the status of my leave application?", "Check the status of my leave", "Have my leave application been approved?"],
+         "responses": ["Let me check the status of your leave application... Your leave has been approved!", "Your leave application is still under review.", "Sorry, your leave has been declined."],
+         "context_set": ""
+        },
+        {"tag": "upcoming_events",
+         "patterns": ["Any upcoming events?", "What events are scheduled?", "What's next on the calendar?"],
+         "responses": ["There is a team meeting tomorrow at 10 AM", "The next event is the annual company picnic on Saturday.", "We have a training session next Monday."],
+         "context_set": ""
+        },
+        {"tag": "leave_balance",
+         "patterns": ["What is my leave balance?", "Check my leave balance", "How many leaves do I have?"],
+         "responses": ["You have X number of leaves remaining.", "Your current leave balance is X", "You can take X more leaves."],
+         "context_set": ""
+        },
+        {"tag": "manager_enquiry",
+         "patterns": ["Who is my Manager?", " May i know the name of my Manager", "Manager name ?", "Give me the name of my manager."],
+         "responses": ["Your manager name is X.", "Your current manager is X", "Your team lead is same as your manager.", "Yes he is your manager"],
+         "context_set": ""
+        }
+   ]
+}
