@@ -23,7 +23,26 @@ Train machine learning models for attendance and leave management.
 
 Use a supervised learning algorithm (e.g. decision trees, random forests, or support vector machines) to train a model for attendance management. The model should be able to predict attendance patterns based on historical data.
 Use a similar approach to train a model for leave management. The model should be able to predict the likelihood of a leave request being approved based on past approvals and rejections.
-Build the HR chatbot using Dialogflow.
+
+FOR DEEP LEARNING CHATBOT -
+1. Run *model.py* to build model first.
+2. Run *responses.py* to use the model and fetch responses.
+
+Some screenshots are attached below -
+
+
+# RECRUITMENT and POLICY
+![alt text](https://raw.githubusercontent.com/AnmolKankariya/HR-Chatbot/master/hrbot%20recruitment%20screen_2.png?raw=true)
+
+# INTERNAL FUNCTIONS
+![alt text](https://raw.githubusercontent.com/AnmolKankariya/HR-Chatbot/master/internal%20hr%20function.PNG?raw=true)
+
+==============================================================================
+
+![alt text](https://raw.githubusercontent.com/AnmolKankariya/HR-Chatbot/master/leave%20screenshor.PNG?raw=true)
+
+# The one who can't take leave
+![alt text](https://raw.githubusercontent.com/AnmolKankariya/HR-Chatbot/master/person%20with%200%20leave%20left.PNG?raw=true)
 
 ### Set up a new agent in Dialogflow.
 Create intents and entities for attendance and leave management. Use the ML models from step 2 to provide responses to user queries.
